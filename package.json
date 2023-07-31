@@ -10,6 +10,7 @@
     "@nuxt/devtools": "^0.7.1",
     "@nuxtjs/device": "^3.1.0",
     "@types/node": "^20.4.5",
+    "@unocss/nuxt": "^0.54.0",
     "nuxt": "^3.6.5"
   }
 }

@@ -3,5 +3,5 @@ export default defineNuxtConfig({
     enabled: true,
   },
 
-  modules: ["@nuxtjs/device"],
+  modules: ["@nuxtjs/device", "@unocss/nuxt"],
 });
