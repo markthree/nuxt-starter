@@ -1,6 +1,6 @@
-type UseFetch = typeof useFetch
+type UseFetch = typeof useFetch;
 
-type UseLazyFetch = typeof useLazyFetch 
+type UseLazyFetch = typeof useLazyFetch;
 
 /**
  * 从后端直接请求
@@ -8,11 +8,11 @@ type UseLazyFetch = typeof useLazyFetch
  * ```ts
  * // 一定会阻塞导航
  * const { data } = await useServiceRequest("/api/foo")
- * ``` 
+ * ```
  */
 export const useServiceRequest: UseFetch = (...rest) => {
-  return useFetch(...rest)
-}
+  return useFetch(...rest);
+};
 
 /**
  * 从前端请求
@@ -23,9 +23,9 @@ export const useServiceRequest: UseFetch = (...rest) => {
  * ```
  */
 export const useClentRequest: UseLazyFetch = (...rest) => {
-  const [url, options, ...otherRest] = rest
+  const [url, options, ...otherRest] = rest;
   return useLazyFetch(url, {
     ...options,
-    server: false
-  }, ...otherRest)
-}
+    server: false,
+  }, ...otherRest);
+};
