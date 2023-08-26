@@ -8,5 +8,6 @@ export default defineNuxtConfig({
   experimental: {
     typedPages: true,
   },
+  sourcemap: false,
   modules: ["@nuxtjs/device", "@unocss/nuxt"],
 });
