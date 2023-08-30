@@ -7,9 +7,9 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^0.8.0",
+    "@nuxt/devtools": "^0.8.2",
     "@nuxtjs/device": "^3.1.0",
-    "@types/node": "^20.5.6",
+    "@types/node": "^20.5.7",
     "@unocss/nuxt": "^0.55.3",
     "nuxt": "^3.7.0"
   }
